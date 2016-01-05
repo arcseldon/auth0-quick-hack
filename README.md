@@ -30,6 +30,8 @@ With github username: "angular"
 > $  curl https://webtask.it.auth0.com/api/run/wt-arcseldon-gmail_com-0/github-info?username=angular
 ```
 
+[[https://raw.githubusercontent.com/arcseldon/auth0-quick-hack/master/run.gif|alt=run cmd]]
+
 This app is a quick hack only, there are many limitations etc. However, it is easy to see how this could
 be extended and potentially used within a web front-end. For example a simple Angular app with a search box for
 username. Then results are presented with the user information and github avatar image, together with a
