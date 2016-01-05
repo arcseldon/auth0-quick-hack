@@ -18,6 +18,12 @@ From the root of this repo:
 > $ wt create githubInfo.js --name github-info
 ```
 
+You can also reference the published source code:
+
+``
+> $ wt create https://raw.githubusercontent.com/arcseldon/auth0-quick-hack/master/githubInfo.js
+```
+
 Use that response URL with a username query param suffixed to call the created webtask
 
 #### Example execution
@@ -30,8 +36,15 @@ With github username: "angular"
 > $  curl https://webtask.it.auth0.com/api/run/wt-arcseldon-gmail_com-0/github-info?username=angular
 ```
 
-![run cmd](run.gif)
+[[https://raw.githubusercontent.com/arcseldon/auth0-quick-hack/master/run.gif|alt=run cmd]]
 
-This app is a quick hack only, there are many limitations etc. However, it is easy to see how this could be extended and potentially used within a web front-end. For example a simple Angular app with a search box for username. Then results are presented with the user information and github avatar image, together with a list of matching repos beneath.
+This app is a quick hack only, there are many limitations etc. However, it is easy to see how this could
+be extended and potentially used within a web front-end. For example a simple Angular app with a search box for
+username. Then results are presented with the user information and github avatar image, together with a
+list of matching repos beneath.
 
-Bear in mind that although the Github API is already public, one advantage of using the webtask approach is taking computation offline, and allowing the webtask to provide a custom "aggregated data response" internally having potentially called many different API URLs.
+Bear in mind that although the Github API is already public, one advantage of using the webtask approach is taking
+computation offline, and allowing the webtask to provide a custom "aggregated data response" internally having potentially
+called many different API URLs.
+
+

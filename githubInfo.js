@@ -37,10 +37,10 @@ module.exports = function (ctx, done) {
       }, function (error, response, body) {
 
         if (error) {
-          return done(err);
+          return done(error);
         }
         if (response.statusCode !== 200) {
-          return done(err);
+          return done('Incorrect http response code: ' + response.statusCode);
         }
         // parse out required attributes
         var userInfo = JSON.parse(body);
@@ -58,10 +58,10 @@ module.exports = function (ctx, done) {
       }, function (error, response, body) {
 
         if (error) {
-          return done(err);
+          return done(error);
         }
         if (response.statusCode !== 200) {
-          return done(err);
+          return done('Incorrect http response code: ' + response.statusCode);
         }
         // filter and transform repo data to required format
         var reposInfo = JSON.parse(body),
