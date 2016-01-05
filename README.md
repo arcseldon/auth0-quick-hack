@@ -20,7 +20,7 @@ From the root of this repo:
 
 You can also reference the published source code:
 
-``
+```
 > $ wt create https://raw.githubusercontent.com/arcseldon/auth0-quick-hack/master/githubInfo.js
 ```
 
@@ -46,5 +46,3 @@ list of matching repos beneath.
 Bear in mind that although the Github API is already public, one advantage of using the webtask approach is taking
 computation offline, and allowing the webtask to provide a custom "aggregated data response" internally having potentially
 called many different API URLs.
-
-
